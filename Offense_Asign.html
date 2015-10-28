@@ -64,7 +64,7 @@ function if_date_null(x){
   }
   var token = document.cookie.split("SEC=").pop().split(";").shift();
   //change the x.x.x.x with the IP address of QRadar console
-  var url="https://x.x.x.x/api/siem/offenses?filter=start_time"+"%3E"+( ( new Date() ).getTime() - 86400000 );/
+  var url="https://x.x.x.x/api/siem/offenses?filter=start_time"+"%3E"+( ( new Date() ).getTime() - 86400000 );
   xhttp.open("GET", url, true);
   xhttp.setRequestHeader("Version", "4.0");
   xhttp.setRequestHeader("Range", "items=0-49");
