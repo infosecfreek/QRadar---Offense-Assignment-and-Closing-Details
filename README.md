@@ -10,6 +10,6 @@ You can copy the tabular result in your excel sheet and then do performance anal
 
 How to deploy:
 
-Open the file, change the x.x.x.x mentioned in it with Qradar console IP address. Copy the Offense_Asign.html to the /opt/qradar/webapps/console in your QRadar console using winscp. Now you can access this with following url: https://x.x.x.x/console/Offense_Asign
+Open the file, change the x.x.x.x mentioned in it with Qradar console IP address. Copy the Offense_Asign.html to the /opt/qradar/webapps/console in your QRadar console using winscp. Now you can access this with following url: https://x.x.x.x/console/Offense_Asign.html
 
 
