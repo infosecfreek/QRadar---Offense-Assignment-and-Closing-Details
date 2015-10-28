@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Offense Assigned to Analysts within last 24 hours</h2>
+
+<button type="button" onclick="loadDoc()">Get the data</button>
+
+<p id="demo"></p>
+ 
+<script>
+
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+      //document.getElementById("demo").innerHTML = token;
+	  var rishabh = JSON.parse(xhttp.responseText);
+	
+
+function if_null(x){
+	if (x==null){
+	return "--";
+	}
+	else{
+	return x;
+	}
+}	
+
+function if_date_null(x){
+	if (x==null){
+	return "--";
+	}
+	else{
+	return new Date(x);
+	}
+}
+  document.write("<p>"+"Offense Assigned to Analysts within last 24 hours"+"</p>");
+  document.write("<table border='1'>");
+  document.write("<tr>");
+  document.write("<th>"+"Offense Id"+"</th>");
+  document.write("<th>"+"Descrition"+"</th>");
+  document.write("<th>"+"Assigned Analyst"+"</th>");
+  document.write("<th>"+"Start time"+"</th>");
+  document.write("<th>"+"Closing Time"+"</th>");
+  document.write("<th>"+"Analyst Who closed this Offense"+"</th>");
+  //document.write("<th>"+"Closing Reason"+"</th>"); 
+  document.write("</tr>");
+  for(var i=0; i< rishabh.length; i++){
+  document.write("<tr>");
+  document.write("<td>"+rishabh[i].id+"</td>");
+  document.write("<td>"+rishabh[i].description+"</td>");
+  document.write("<td>"+if_null(rishabh[i].assigned_to)+"</td>");
+  document.write("<td>"+new Date(rishabh[i].start_time)+"</td>");
+  document.write("<td>"+if_date_null(rishabh[i].close_time)+"</td>");
+  document.write("<td>"+if_null(rishabh[i].closing_user)+"</td>");
+  //document.write("<td>"+rishabh[i].closing_reason_id+"</td>");
+  document.write("</tr>");
+  }
+  document.write("</table>");
+	
+    }
+	  
+  }
+  var token = document.cookie.split("SEC=").pop().split(";").shift();
+  //change the x.x.x.x with the IP address of QRadar console
+  var url="https://x.x.x.x/api/siem/offenses?filter=start_time"+"%3E"+( ( new Date() ).getTime() - 86400000 );/
+  xhttp.open("GET", url, true);
+  xhttp.setRequestHeader("Version", "4.0");
+  xhttp.setRequestHeader("Range", "items=0-49");
+  xhttp.setRequestHeader("Accept", "application/json");
+  xhttp.setRequestHeader("Content-type", " application/json");
+  xhttp.setRequestHeader("SEC", token);
+  xhttp.send();
+  
+}
+</script>
+
+</body>
+</html>
 
