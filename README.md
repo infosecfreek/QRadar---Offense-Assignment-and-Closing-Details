@@ -16,9 +16,11 @@ Change the "user1","user2","user3","user4" mentioned in the code with the users 
 
 URL for the outputs of this script:
 
+![1](https://cloud.githubusercontent.com/assets/15055583/12003776/63e679ec-ab53-11e5-9ba6-dd3b2574397f.png)
+
 ![2](https://cloud.githubusercontent.com/assets/15055583/12003909/194da184-ab59-11e5-8da6-1403e119abc6.png)
 
-![1](https://cloud.githubusercontent.com/assets/15055583/12003776/63e679ec-ab53-11e5-9ba6-dd3b2574397f.png)
+
 
 
 
