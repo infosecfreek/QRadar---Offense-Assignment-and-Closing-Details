@@ -14,7 +14,10 @@ Open the file, change the x.x.x.x mentioned in it with Qradar console IP address
 
 Change the "user1","user2","user3","user4" mentioned in the code with the users available in your console.
 
-
+URL for the outputs of this script:
+https://github.com/infosecfreek/QRadar---Offense-Assignment-and-Closing-Details/issues/3
+https://cloud.githubusercontent.com/assets/15055583/12003776/63e679ec-ab53-11e5-9ba6-dd3b2574397f.png
+https://cloud.githubusercontent.com/assets/15055583/12003909/194da184-ab59-11e5-8da6-1403e119abc6.png
 
 
 
