@@ -18,6 +18,8 @@ URL for the outputs of this script:
 
 ![1](https://cloud.githubusercontent.com/assets/15055583/12003776/63e679ec-ab53-11e5-9ba6-dd3b2574397f.png)
 
+![3](https://cloud.githubusercontent.com/assets/15055583/12003953/83682416-ab5b-11e5-8e54-a53e544f2703.png)
+
 ![2](https://cloud.githubusercontent.com/assets/15055583/12003909/194da184-ab59-11e5-8da6-1403e119abc6.png)
 
 
